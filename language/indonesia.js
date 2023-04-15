@@ -12,7 +12,7 @@ exports.snk = "Syarat & Ketentuan Bot\n\n1. isi sendiri"
 exports.getStyle = (style, style2) => {
     return `**${style2} Yg Kamu Masukkan Salah**\n\n__Berikut List ${style2} Yg Benar, Total__ **${style}** __${style2}__\n\n`
 }
-exports.wait = "`⏳ Mohon tunggu sebentar`"
+exports.wait = "`⏳ Waiting`"
 exports.ok = `Done ✅`
 exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hitall, latensii, os, simple, week, date, dateIslamic, username, isCreator, user_id) => {
     var ini_anu = `Hi ${pushname}
