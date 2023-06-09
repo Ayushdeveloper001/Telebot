@@ -80,19 +80,7 @@ async function startalpha() {
                 break
                 case "animecmd": {
                     lang.animecmd(alpha, THUMBNAIL, user_id.toString())
-                }
-                break
-                case "asupancmd": {
-                    lang.asupancmd(alpha, THUMBNAIL, user_id.toString())
-                }
-                break
-                case "cecancmd": {
-                    lang.cecancmd(alpha, THUMBNAIL, user_id.toString())
-                }
-                break
-                case "cogancmd": {
-                    lang.cogancmd(alpha, THUMBNAIL, user_id.toString())
-                }
+               }
                 break
                 case "downloadcmd": {
                     lang.downloadcmd(alpha, THUMBNAIL, user_id.toString())
@@ -113,16 +101,13 @@ async function startalpha() {
                 case "logocmd2": {
                     lang.logocmd2(alpha, THUMBNAIL, user_id.toString())
                 }
-                break
-                case "islamcmd": {
-                    lang.islamcmd(alpha, THUMBNAIL, user_id.toString())
-                }
+
                 break
                 case "nsfwcmd": {
                     lang.nsfwcmd(alpha, THUMBNAIL, user_id.toString())
                 }
                 break
-                case "photooxycmd": {
+                case "photcmd": {
                     lang.photooxycmd(alpha, THUMBNAIL, user_id.toString())
                 }
                 break
@@ -170,7 +155,7 @@ async function startalpha() {
                         key += `• Quality: ${quality}\n`
                         key += `• Size: ${filesize}\n`
                         key += `• Download: ${download}\n\n`
-                        key += `Ukuran media melebihi batas, silahkan download sendiri melalui link di atas.`
+                        key += `You can download any media of youtube with this command.`
                         await alpha.replyWithPhoto({
                             url: thumbnail
                         }, {
@@ -183,7 +168,7 @@ async function startalpha() {
                         key += `• Quality: ${quality}\n`
                         key += `• Size: ${filesize}\n`
                         key += `• Download: ${download}\n\n`
-                        key += `Silahkan download melalui link di atas jika media tidak di kirim`
+                        key += `You can download any media of youtube with this command`
                         await alpha.replyWithPhoto({
                             url: thumbnail
                         }, {
@@ -224,7 +209,7 @@ async function startalpha() {
                         key += `• Quality: ${quality}\n`
                         key += `• Size: ${filesize}\n`
                         key += `• Download: ${getdl.data}\n\n`
-                        key += `Ukuran media melebihi batas, silahkan download sendiri melalui link di atas.`
+                        key += `You can download any media of youtube with this command.`
                         await alpha.replyWithPhoto({
                             url: thumbnail
                         }, {
@@ -237,7 +222,7 @@ async function startalpha() {
                         key += `• Quality: ${quality}\n`
                         key += `• Size: ${filesize}\n`
                         key += `• Download: ${getdl.data}\n\n`
-                        key += `Silahkan download melalui link di atas jika media tidak di kirim`
+                        key += `You can download any media of youtube wuth this command`
                         await alpha.replyWithPhoto({
                             url: thumbnail
                         }, {
@@ -266,7 +251,7 @@ async function startalpha() {
                 inline_keyboard: [
                     [{
                         text: 'Script',
-                        url: "https://github.com/zeeoneofficial/telebot"
+                        url: "https://github.com/ayushdeveloper00"
                     }, {
                         text: 'Owner',
                         url: OWNER[0]
@@ -285,7 +270,7 @@ async function startalpha() {
                 inline_keyboard: [
                     [{
                         text: 'Script',
-                        url: "https://github.com/zeeoneofficial/telebot"
+                        url: "https://github.com/ayushdeveloper001"
                     }, {
                         text: 'Owner',
                         url: OWNER[0]
@@ -308,7 +293,7 @@ async function startalpha() {
             "Username": "@" + getme.username,
             "ID": getme.id,
             "Link": `https://t.me/${getme.username}`,
-            "Author": "https://t.me/zeeoneofc"
+            "Author": "https://t.me/Ayushdeveloper"
         })
     })
 }
