@@ -18,9 +18,9 @@ global.APIKeys = {
 global.language = english //change indonesia to english if you don't understand the language used by the bot
 
 global.BOT_TOKEN = "5605050942:AAHUVfRUB2mlwom9pBPWhPfX5-qU0ieIRiQ" //create bot here https://t.me/BotFather and get the bot token
-global.BOT_NAME = "Alphabot-Mdོ" //your bot name
+global.BOT_NAME = "Alpha" //your bot name
 global.OWNER_NAME = "Ayush" //your name
-global.OWNER_NUMBER = "918602206506" //your telegram number
+global.OWNER_NUMBER = "16468338933" //your telegram number
 global.OWNER = ["https://t.me/zeeoneofc", "https://t.me/zeeone_ofc"] // pastikan username sudah sesuai agar fitur khusus owner bisa di pakai
 global.THUMBNAIL = "./image/ayush.png" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.DONASI = "./image/nice.png" // foto donasi di folder image
