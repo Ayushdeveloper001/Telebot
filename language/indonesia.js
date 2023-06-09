@@ -1,11 +1,11 @@
 exports.noToken = "Bot token tidak boleh kosong, silahkan buat bot melalui https://t.me/BotFather"
 
 exports.first_chat = (botname, pushname) => {
-    return `Halo ${pushname}! Nama saya ${botname} - Saya adalah Bot Telegram multi fungsi! Klik /menu untuk mengetahui lebih lanjut tentang cara menggunakan bot ini.
+    return `Hello ${pushname}! Hello I am ${botname} - Telegram bot with rich features.
 
-Bergabunglah dengan [channel saya](https://t.me/zeeone_ofc) untuk mendapatkan informasi tentang semua pembaruan terbaru.
+My official user (https://t.me/ohiolover839) to check more info.
 
-Kirim perintah /privacy untuk melihat syarat dan ketentuan penggunaan bot.
+type /privacy to see more about me.
 `
 }
 exports.snk = "Syarat & Ketentuan Bot\n\n1. isi sendiri"
@@ -30,7 +30,6 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
 
 ╭─❒ 「 Date Info 」 
 ├ Masehi : ${week}, ${date}
-├ Hijriah : ${dateIslamic}
 ╰❒
 
 ╭─❒ 「 User Info 」 
@@ -43,21 +42,11 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
                 text: '🃏 Anime',
                 callback_data: 'animecmd ' + user_id
             },
-            {
-                text: 'Asupan 😋',
-                callback_data: 'asupancmd ' + user_id
-            }
-        ],
-        [{
-                text: '👧 Cecan',
-                callback_data: 'cecancmd ' + user_id
-            },
-            {
-                text: 'Cogan️ 👦',
-                callback_data: 'cogancmd ' + user_id
-            }
-        ],
-        [{
+       
+              
+           
+    
+        {
                 text: '📥 Download',
                 callback_data: 'downloadcmd ' + user_id
             },
@@ -71,16 +60,13 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
                 callback_data: 'logocmd ' + user_id
             },
             {
-                text: 'Islamic 🕌',
-                callback_data: 'islamcmd ' + user_id
-            },
-        ],
+             
         [{
                 text: '👙 Nsfw & Sfw',
                 callback_data: 'nsfwcmd ' + user_id
             },
             {
-                text: 'Photooxy 🖼️',
+                text: 'Photoo 🖼️',
                 callback_data: 'photooxycmd ' + user_id
             },
         ],
@@ -180,7 +166,7 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
 » /rimuru
 » /sagiri
 » /natsu
-» /tanjirou
+» /tanjir
 » /loli
 ╰──────────◇
 `
@@ -204,98 +190,29 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
                 text: '⬅️ Back',
                 callback_data: 'animecmd ' + user_id
             },
-            {
-                text: 'Cecan 👧',
-                callback_data: 'cecancmd ' + user_id
-            }
+
         ],
         [{
             text: '⚘ Owner ⚘',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ASUPAN 」 
-» /chika
-» /rikagusriani
-» /bocil
-» /geayubi
-» /santuy
-» /ukhty
-» /asupan
-» /delvira
-» /ayu
-» /bunga
-» /aura
-» /nisa
-» /ziva
-» /yana
-» /viona
-» /syania
-» /riri
-» /syifa
-» /mama-gina
-» /alcakenya
-» /mangayutri
-╰──────────◇
-`
-    await alpha.editMessageMedia({
-        type: "photo",
-        media: {
-            source: thumbnail
-        },
-        caption: caption
-    }, {
-        parse_mode: "MARKDOWN",
-        disable_web_page_preview: true,
-        reply_markup: {
-            inline_keyboard: button
-        }
-    })
-}
+    
 exports.cecancmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Back',
                 callback_data: 'asupancmd ' + user_id
             },
-            {
-                text: 'Cogan️ 👦',
-                callback_data: 'cogancmd ' + user_id
-            }
+            
         ],
         [{
             text: '⚘ Owner ⚘',
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 CECAN 」 
-» /china
-» /indonesia
-» /malaysia
-» /thailand
-» /korea
-» /japan
-» /vietnam
-» /jenni
-» /jiiso
-» /lisa
-» /rose
-╰──────────◇
-`
-    await alpha.editMessageMedia({
-        type: "photo",
-        media: {
-            source: thumbnail
-        },
-        caption: caption
-    }, {
-        parse_mode: "MARKDOWN",
-        disable_web_page_preview: true,
-        reply_markup: {
-            inline_keyboard: button
-        }
-    })
-}
+
+
 exports.cogancmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
@@ -312,41 +229,7 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 COGAN 」 
-» /wuyifan
-» /suga
-» /parkchanyeol
-» /ohsehun
-» /luhan
-» /kimtaehyung
-» /kimseok
-» /kimnanjoon
-» /kimminseok
-» /kimjunmyeon
-» /kimjong
-» /kimjondae
-» /jungkook
-» /jimin
-» /jhope
-» /huangzitao
-» /dohkyungsoo
-» /baekhyung
-╰──────────◇
-`
-    await alpha.editMessageMedia({
-        type: "photo",
-        media: {
-            source: thumbnail
-        },
-        caption: caption
-    }, {
-        parse_mode: "MARKDOWN",
-        disable_web_page_preview: true,
-        reply_markup: {
-            inline_keyboard: button
-        }
-    })
-}
+    
 exports.downloadcmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
@@ -615,8 +498,8 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
                 callback_data: 'ephotocmd ' + user_id
             },
             {
-                text: 'Islamic 🕌',
-                callback_data: 'islamcmd ' + user_id
+                text: 'download',
+                callback_data: 'downloadcmd ' + user_id
             }
         ],
         [{
@@ -689,32 +572,7 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
             callback_data: 'owner ' + user_id
         }, ]
     ]
-    var caption = `╭─❒ 「 ISLAMIC 」 
-» /asmaulhusna
-» /kisahnabi
-» /jadwalshalat
-» /randomquran
-» /randomquran2
-» /dictator
-» /listsurah
-» /tafsirsurah
-» /alquranaudio
-╰──────────◇
-`
-    await alpha.editMessageMedia({
-        type: "photo",
-        media: {
-            source: thumbnail
-        },
-        caption: caption
-    }, {
-        parse_mode: "MARKDOWN",
-        disable_web_page_preview: true,
-        reply_markup: {
-            inline_keyboard: button
-        }
-    })
-}
+    
 exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
     var button = [
         [{
@@ -722,7 +580,7 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
                 callback_data: 'islamcmd ' + user_id
             },
             {
-                text: 'Photooxy 🖼️',
+                text: 'Photo 🖼️',
                 callback_data: 'photooxycmd ' + user_id
             }
         ],
